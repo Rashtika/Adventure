@@ -16,12 +16,9 @@ public class Location {
         } else {
             this.exits = new HashMap<String, Integer>();
         }
-        this.exits.put("Q", 0); // buduci da se pojavljuje u svakoj instanci location lakse je staviti to u konstruktor, nego dodavati posebno u svaki
+        this.exits.put("Q", 0);
     }
 
-//    public void addExit(String direction, int location) {
-//        exits.put(direction, location);
-//    }
 
     public int getLocationID() {
         return locationID;

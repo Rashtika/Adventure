@@ -63,8 +63,7 @@ public class Main {
                 break;
             }
 
-            Map<String, Integer> exits = locations.get(loc).getExits(); // .getExits() vraca kopiju Map dostupnih tj. mogucih exita za tu odredenu lokaciju,
-                                                                        // ako bi napravili promjenu u ovom Map, ne bi utjecalo na Map field u instanci location
+            Map<String, Integer> exits = locations.get(loc).getExits();
             System.out.print("Available exits are ");
             for (String exit: exits.keySet()) {
                 System.out.print(exit + ", ");
